@@ -27,7 +27,7 @@ with st.sidebar:
 def get_gemini_prompts(user_copy, api_key):
     """调用 Gemini 将文案转化为视觉提示词"""
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
     你是一位专业的电商视觉总监。请根据以下产品文案，设计 3 张不同维度的轮播图视觉方案。
