@@ -21,7 +21,7 @@ with st.sidebar:
 def get_gemini_prompts(user_copy, api_key):
     genai.configure(api_key=api_key)
     # 自动尝试最新模型名
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash-exp')
     
     prompt = f"""
     你是一位专业的电商视觉总监。请根据以下产品文案，设计 3 张不同维度的轮播图视觉方案。
